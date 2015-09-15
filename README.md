@@ -8,7 +8,6 @@ So first [install GVM](https://github.com/moovweb/gvm) - loan_surgeon requires
 go1.4.1 or beyond to build correctly.
 ```
 gvm install go1.4
-
 gvm use go1.4
 # if you use autoenv you may want to add the line above to your .env file
 ```
