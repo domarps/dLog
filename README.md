@@ -1,5 +1,3 @@
-# dLog
-Distributed Log Querier
 # dlog
 Machine Programming I - Distributed Log Querier
 
@@ -32,17 +30,9 @@ packages (including `golint`):
 
 ### Installation
 Deploying to production:
-
-```
-bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
-source ~/.gvm/scripts/gvm
-gvm install go1.4
-gvm use go1.4
-go get gitlab-beta.engr.illinois.edu/mcconne7/dlog
+go get https://gitlab-beta.engr.illinois.edu/mcconne7/dlog
 cd $GOPATH/src/gitlab-beta.engr.illinois.edu/mcconne7/dlog
-./go_get.sh
 go install ./...
-```
 
 ## Development
 
@@ -72,7 +62,7 @@ client: run
 * 127.0.0.1:3000 is the example URL
 
 ```
-dgrep_client 127.0.0.1:3000
+$ dgrep_client 127.0.0.1:3000
 2015/09/12 20:28:07 client.go:46: Connection to: [127.0.0.1:3000]
 ```
 
@@ -93,25 +83,9 @@ hello world!
 ```
 
 ### System
-runs the system command on all servers
 
 ```
 sys grep go README.md
-* go
-go1.4.1 or beyond to build correctly.
-gvm install go1.4
-gvm use go1.4
-correct go path location. If you are unsure, run:
-go get gitlab-beta.engr.illinois.edu/mcconne7/dlog
-packages (including `golint`):
-./go_get.sh
-```
-
-### Log
-runs a system command on each servers log file
-
-```
-log grep go
 * go
 go1.4.1 or beyond to build correctly.
 gvm install go1.4

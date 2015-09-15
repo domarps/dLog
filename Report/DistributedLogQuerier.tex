@@ -1,0 +1,25 @@
+\input{cs425.tex}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+%\usepackage{algocompatible}
+%\usepackage{algorithm}
+\oddsidemargin 0in
+\evensidemargin 0in
+\textwidth 6.5in
+\topmargin -0.5in
+\textheight 9.0in
+
+\begin{document}
+
+\solution{\footnotesize John McConnell(mcconne7), Pramod Srinivasan(psrnvsn2)}{\today}{Distributed Log Querier}{Fall 2015}
+% Fill in the above, for example, as follows:
+% \solution{Joe Smith}{\today}{1}{Fall 2012}
+
+\pagestyle{myheadings}  % Leave this command alone
+
+{\centering \large \textbf{DESIGN}} \\
+The design of the logger system consists of a single client interacting with multiple servers. The client is a simple code to submit user’s request to the server as well as printing the result.  It is to be deployed on all the servers so that users can use any server for running the command. It has the address of MASTER hardcoded in it. The client then opens up a socket using the *** and attempts to connect the server(s). When started, the server opens up a socket and listens to the incoming connections from the client. The data format is a custom protocol named \textit{qik}.
+
+
+\end{document}
